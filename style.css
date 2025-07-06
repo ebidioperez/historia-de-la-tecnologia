@@ -106,12 +106,24 @@ body {
   padding: 15px;
   margin-top: 20px;
 }
+
 /* Video separado */
 .video-container {
   margin-bottom: 20px;
 }
 
-/* Viñeta tipo cuadrado (■) */
+/* Listas personalizadas */
+ul.custom-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul.custom-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
 ul.custom-list li.square::before {
   content: "■";
   position: absolute;
@@ -119,7 +131,6 @@ ul.custom-list li.square::before {
   color: #000;
 }
 
-/* Viñeta tipo círculo vacío (○) */
 ul.custom-list li.circle::before {
   content: "○";
   position: absolute;
@@ -127,7 +138,6 @@ ul.custom-list li.circle::before {
   color: #000;
 }
 
-/* Viñeta tipo disco lleno (●) */
 ul.custom-list li.disc::before {
   content: "●";
   position: absolute;
@@ -135,12 +145,14 @@ ul.custom-list li.disc::before {
   color: #000;
 }
 
-/* Sin viñeta */
 ul.custom-list li.none::before {
   content: "";
 }
 
+/* Encabezados */
 h1 {
   color: orange;
   background-color: black;
+  padding: 10px;
+  text-align: center;
 }
